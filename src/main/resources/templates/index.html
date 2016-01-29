@@ -1,0 +1,22 @@
+<!doctype html>
+
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>Microservice Demo PAC4J Client</title>
+    </head>
+    
+    <body>
+        <h2>PAC4J Client - Welcome</h2>
+        
+        
+        <a href="cas/index.html">Protected url by CAS: cas/index.html</a> (use login = pwd)<br />
+        
+        <a href="http://gucibrahimak1.verifone.com:8889/microservicedemocas2"> client2</a>
+        
+        
+<!--         Hi <span th:text="${#authentication.principal.username}" th:remove="tag"></span>. -->
+<!--         Hi <span th:text="${#authentication.name}" th:remove="tag"></span>. -->
+        
+        profile: {{profile}}
+    </body>
+</html>
